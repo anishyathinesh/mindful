@@ -26,48 +26,55 @@ struct ContentView: View {
                 .multilineTextAlignment(.center)
                 .padding()
             
-            Form {
-                Section(header: Text("[ i am... ]")) {
-                    ForEach(affirmations.indices, id: \.self) { index in
-                        HStack {
-                            TextField("enter affirmation...", text: $affirmations[index])
-                                .textFieldStyle(RoundedBorderTextFieldStyle())
-                            Button(action: {
-                                deleteAff(at: index)
-                            }) {
-                                Image(systemName: "trash")
-                                    .foregroundColor(.red)
+            ScrollView {
+                VStack {
+                    Section(header: Text("[ i am... ]")) {
+                        ForEach(affirmations.indices, id: \.self) { index in
+                            HStack {
+                                TextField("enter affirmation...", text: $affirmations[index])
+                                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                                Button(action: {
+                                    deleteAff(at: index)
+                                }) {
+                                    Image(systemName: "trash")
+                                        .foregroundColor(.red)
+                                }
                             }
                         }
-                    }
-                    Button(action: {
-                        affirmations.append("")
-                    }) {
-                        Image(systemName: "plus")
-                    }
-                }
-                
-                Section(header: Text("[ i will... ]")) {
-                    ForEach(0..<goals.count, id: \.self) { index in
-                        HStack { 
-                            TextField("enter goal...", text: $goals[index])
-                                .textFieldStyle(RoundedBorderTextFieldStyle())
-                            Button(action: {
-                                deleteGoal(at: index)
-                            }) {
-                                Image(systemName: "trash")
-                                    .foregroundColor(.red)
-                            }
+                        Button(action: {
+                            affirmations.append("")
+                            print(affirmations)
+                        }) {
+                            Image(systemName: "plus")
                         }
                     }
-                    Button(action: {
-                        goals.append("")
-                    }) {
-                        Image(systemName: "plus")
+                    .padding()
+            
+                    
+                    Section(header: Text("[ i will... ]")) {
+                        ForEach(0..<goals.count, id: \.self) { index in
+                            HStack {
+                                TextField("enter goal...", text: $goals[index])
+                                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                                Button(action: {
+                                    deleteGoal(at: index)
+                                }) {
+                                    Image(systemName: "trash")
+                                        .foregroundColor(.red)
+                                }
+                            }
+                        }
+                        Button(action: {
+                            goals.append("")
+                        }) {
+                            Image(systemName: "plus")
+                        }
                     }
+                    .padding()
                 }
-                
             }
+            .background(Color.clear)
+            
             Spacer()
             Button(action: {
                 print("meditate button tapped.")
@@ -80,18 +87,20 @@ struct ContentView: View {
                     .frame(maxWidth: .infinity)
                     .background(Color(red: 148/255, green: 201/255, blue: 169/255))
                     .cornerRadius(10)
-                    .shadow(radius: 5)
             }
             .padding()
         }
         .padding()
+        .background(Color.clear.edgesIgnoringSafeArea(.all))
     }
+    
     func deleteGoal(at index: Int) {
         goals.remove(at: index)
         if goals.isEmpty {
             goals.append("")
         }
     }
+    
     func deleteAff(at index: Int) {
         affirmations.remove(at: index)
         if affirmations.isEmpty {
