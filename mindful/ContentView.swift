@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    @State private var goal: String = ""
+    @State private var affirmation: String = ""
+    
+    @State private var goals: [String] = []
+    @State private var affirmations: [String] = []
+    
     var body: some View {
         VStack {
             Text("good afternoon, Anishya")
@@ -22,7 +29,15 @@ struct ContentView: View {
                 .multilineTextAlignment(.center)
                 .padding()
             Form {
-                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Content")/*@END_MENU_TOKEN@*/
+                Section(header: Text("[ i am... ]")) {
+                    TextField("enter affirmation...", text: $goal)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                }
+                
+                Section(header: Text("[ today, i will...]")) {
+                    TextField("enter goal...", text: $affirmation)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                }
             }
         }
         .padding()
