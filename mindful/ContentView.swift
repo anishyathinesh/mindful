@@ -24,8 +24,8 @@ struct ContentView: View {
                 .frame(maxWidth: .infinity, alignment: .center)
                 .font(.title)
                 .multilineTextAlignment(.center)
-                .padding()
-    
+                .padding()
+            
             Form {
                 Section(header: Text("[ i am... ]")) {
                     ForEach(affirmations.indices, id: \.self) { index in
@@ -49,7 +49,7 @@ struct ContentView: View {
                 
                 Section(header: Text("[ i will... ]")) {
                     ForEach(0..<goals.count, id: \.self) { index in
-                        HStack {
+                        HStack { 
                             TextField("enter goal...", text: $goals[index])
                                 .textFieldStyle(RoundedBorderTextFieldStyle())
                             Button(action: {
