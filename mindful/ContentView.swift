@@ -13,11 +13,17 @@ struct ContentView: View {
             Text("good afternoon, Anishya")
                 .font(.largeTitle)
                 .fontWeight(.bold)
+                .multilineTextAlignment(.center)
                 .padding()
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Spacer()
+            Text("write some affirmations/goals for your day")
+                .frame(maxWidth: .infinity, alignment: .center)
+                .font(.title)
+                .multilineTextAlignment(.center)
+                .padding()
+            Form {
+                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Content")/*@END_MENU_TOKEN@*/
+            }
         }
         .padding()
     }
