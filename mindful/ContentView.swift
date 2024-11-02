@@ -17,7 +17,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Text("good afternoon, Anishya")
+            Text("good afternoon,\n Anishya")
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .multilineTextAlignment(.center)
@@ -39,6 +39,21 @@ struct ContentView: View {
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                 }
             }
+            Spacer()
+            Button(action: {
+                print("meditate button tapped.")
+            }) {
+                Text("meditate")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(Color(red: 148/255, green: 201/255, blue: 169/255))
+                    .cornerRadius(10)
+                    .shadow(radius: 5)
+            }
+            .padding()
         }
         .padding()
     }
