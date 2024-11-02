@@ -9,11 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
 
-    @State private var goal: String = ""
-    @State private var affirmation: String = ""
-    
-    @State private var goals: [String] = []
-    @State private var affirmations: [String] = []
+    @State private var goals: [String] = [""]
+    @State private var affirmations: [String] = [""]
     
     var body: some View {
         VStack {
@@ -27,17 +24,49 @@ struct ContentView: View {
                 .frame(maxWidth: .infinity, alignment: .center)
                 .font(.title)
                 .multilineTextAlignment(.center)
-                .padding()
+                .padding()
+    
             Form {
                 Section(header: Text("[ i am... ]")) {
-                    TextField("enter affirmation...", text: $goal)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    ForEach(affirmations.indices, id: \.self) { index in
+                        HStack {
+                            TextField("enter affirmation...", text: $affirmations[index])
+                                .textFieldStyle(RoundedBorderTextFieldStyle())
+                            Button(action: {
+                                deleteAff(at: index)
+                            }) {
+                                Image(systemName: "trash")
+                                    .foregroundColor(.red)
+                            }
+                        }
+                    }
+                    Button(action: {
+                        affirmations.append("")
+                    }) {
+                        Image(systemName: "plus")
+                    }
                 }
                 
-                Section(header: Text("[ today, i will...]")) {
-                    TextField("enter goal...", text: $affirmation)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                Section(header: Text("[ i will... ]")) {
+                    ForEach(0..<goals.count, id: \.self) { index in
+                        HStack {
+                            TextField("enter goal...", text: $goals[index])
+                                .textFieldStyle(RoundedBorderTextFieldStyle())
+                            Button(action: {
+                                deleteGoal(at: index)
+                            }) {
+                                Image(systemName: "trash")
+                                    .foregroundColor(.red)
+                            }
+                        }
+                    }
+                    Button(action: {
+                        goals.append("")
+                    }) {
+                        Image(systemName: "plus")
+                    }
                 }
+                
             }
             Spacer()
             Button(action: {
@@ -56,6 +85,18 @@ struct ContentView: View {
             .padding()
         }
         .padding()
+    }
+    func deleteGoal(at index: Int) {
+        goals.remove(at: index)
+        if goals.isEmpty {
+            goals.append("")
+        }
+    }
+    func deleteAff(at index: Int) {
+        affirmations.remove(at: index)
+        if affirmations.isEmpty {
+            affirmations.append("")
+        }
     }
 }
 
