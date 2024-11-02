@@ -15,7 +15,6 @@
 		4F5EB14F2CD68C7400E0E028 /* mindfulUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5EB14E2CD68C7400E0E028 /* mindfulUITests.swift */; };
 		4F5EB1512CD68C7400E0E028 /* mindfulUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5EB1502CD68C7400E0E028 /* mindfulUITestsLaunchTests.swift */; };
 		4FB2AFF92CD6C45C00B6A6A8 /* MeditateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2AFF82CD6C45C00B6A6A8 /* MeditateView.swift */; };
-		4FB2AFFB2CD6C54C00B6A6A8 /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2AFFA2CD6C53E00B6A6A8 /* SharedData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +46,7 @@
 		4F5EB14E2CD68C7400E0E028 /* mindfulUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mindfulUITests.swift; sourceTree = "<group>"; };
 		4F5EB1502CD68C7400E0E028 /* mindfulUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mindfulUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4FB2AFF82CD6C45C00B6A6A8 /* MeditateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditateView.swift; sourceTree = "<group>"; };
-		4FB2AFFA2CD6C53E00B6A6A8 /* SharedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedData.swift; sourceTree = "<group>"; };
+		4FB2B0002CD6D61000B6A6A8 /* HGCircularSlider */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = HGCircularSlider; path = "/Users/anishyathinesh/Library/Developer/Xcode/DerivedData/mindful-aoxvaixwanqhjzbyxdakhzffbebb/SourcePackages/checkouts/HGCircularSlider"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +79,6 @@
 			children = (
 				4F5EB1322CD68C7100E0E028 /* mindful */,
 				4F5EB1432CD68C7400E0E028 /* mindfulTests */,
-				4F5EB14D2CD68C7400E0E028 /* mindfulUITests */,
 				4F5EB1312CD68C7100E0E028 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,12 +96,12 @@
 		4F5EB1322CD68C7100E0E028 /* mindful */ = {
 			isa = PBXGroup;
 			children = (
-				4FB2AFFA2CD6C53E00B6A6A8 /* SharedData.swift */,
 				4F5EB1332CD68C7100E0E028 /* mindfulApp.swift */,
 				4F5EB1352CD68C7100E0E028 /* ContentView.swift */,
 				4F5EB1372CD68C7300E0E028 /* Assets.xcassets */,
 				4F5EB1392CD68C7300E0E028 /* Preview Content */,
 				4FB2AFF82CD6C45C00B6A6A8 /* MeditateView.swift */,
+				4FB2B0002CD6D61000B6A6A8 /* HGCircularSlider */,
 			);
 			path = mindful;
 			sourceTree = "<group>";
@@ -119,6 +117,7 @@
 		4F5EB1432CD68C7400E0E028 /* mindfulTests */ = {
 			isa = PBXGroup;
 			children = (
+				4F5EB14D2CD68C7400E0E028 /* mindfulUITests */,
 				4F5EB1442CD68C7400E0E028 /* mindfulTests.swift */,
 			);
 			path = mindfulTests;
@@ -221,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 4F5EB1272CD68C7100E0E028;
+			packageReferences = (
+				4FB2AFFE2CD6D46B00B6A6A8 /* XCRemoteSwiftPackageReference "HGCircularSlider" */,
+			);
 			productRefGroup = 4F5EB1312CD68C7100E0E028 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -263,7 +265,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FB2AFFB2CD6C54C00B6A6A8 /* SharedData.swift in Sources */,
 				4F5EB1362CD68C7100E0E028 /* ContentView.swift in Sources */,
 				4FB2AFF92CD6C45C00B6A6A8 /* MeditateView.swift in Sources */,
 				4F5EB1342CD68C7100E0E028 /* mindfulApp.swift in Sources */,
@@ -596,6 +597,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4FB2AFFE2CD6D46B00B6A6A8 /* XCRemoteSwiftPackageReference "HGCircularSlider" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/HamzaGhazouani/HGCircularSlider";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 4F5EB1282CD68C7100E0E028 /* Project object */;
 }
