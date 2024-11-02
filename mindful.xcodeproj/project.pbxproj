@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F5EB1342CD68C7100E0E028 /* mindfulApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5EB1332CD68C7100E0E028 /* mindfulApp.swift */; };
+		4F5EB1362CD68C7100E0E028 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5EB1352CD68C7100E0E028 /* ContentView.swift */; };
+		4F5EB1382CD68C7300E0E028 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F5EB1372CD68C7300E0E028 /* Assets.xcassets */; };
+		4F5EB13B2CD68C7300E0E028 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F5EB13A2CD68C7300E0E028 /* Preview Assets.xcassets */; };
+		4F5EB1452CD68C7400E0E028 /* mindfulTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5EB1442CD68C7400E0E028 /* mindfulTests.swift */; };
+		4F5EB14F2CD68C7400E0E028 /* mindfulUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5EB14E2CD68C7400E0E028 /* mindfulUITests.swift */; };
+		4F5EB1512CD68C7400E0E028 /* mindfulUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5EB1502CD68C7400E0E028 /* mindfulUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F5EB1412CD68C7400E0E028 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F5EB1282CD68C7100E0E028 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F5EB12F2CD68C7100E0E028;
+			remoteInfo = mindful;
+		};
+		4F5EB14B2CD68C7400E0E028 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F5EB1282CD68C7100E0E028 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F5EB12F2CD68C7100E0E028;
+			remoteInfo = mindful;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4F5EB1302CD68C7100E0E028 /* mindful.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mindful.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F5EB1332CD68C7100E0E028 /* mindfulApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mindfulApp.swift; sourceTree = "<group>"; };
+		4F5EB1352CD68C7100E0E028 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4F5EB1372CD68C7300E0E028 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F5EB13A2CD68C7300E0E028 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4F5EB1402CD68C7400E0E028 /* mindfulTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mindfulTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F5EB1442CD68C7400E0E028 /* mindfulTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mindfulTests.swift; sourceTree = "<group>"; };
+		4F5EB14A2CD68C7400E0E028 /* mindfulUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mindfulUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F5EB14E2CD68C7400E0E028 /* mindfulUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mindfulUITests.swift; sourceTree = "<group>"; };
+		4F5EB1502CD68C7400E0E028 /* mindfulUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mindfulUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F5EB12D2CD68C7100E0E028 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F5EB13D2CD68C7300E0E028 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F5EB1472CD68C7400E0E028 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F5EB1272CD68C7100E0E028 = {
+			isa = PBXGroup;
+			children = (
+				4F5EB1322CD68C7100E0E028 /* mindful */,
+				4F5EB1432CD68C7400E0E028 /* mindfulTests */,
+				4F5EB14D2CD68C7400E0E028 /* mindfulUITests */,
+				4F5EB1312CD68C7100E0E028 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4F5EB1312CD68C7100E0E028 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F5EB1302CD68C7100E0E028 /* mindful.app */,
+				4F5EB1402CD68C7400E0E028 /* mindfulTests.xctest */,
+				4F5EB14A2CD68C7400E0E028 /* mindfulUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F5EB1322CD68C7100E0E028 /* mindful */ = {
+			isa = PBXGroup;
+			children = (
+				4F5EB1332CD68C7100E0E028 /* mindfulApp.swift */,
+				4F5EB1352CD68C7100E0E028 /* ContentView.swift */,
+				4F5EB1372CD68C7300E0E028 /* Assets.xcassets */,
+				4F5EB1392CD68C7300E0E028 /* Preview Content */,
+			);
+			path = mindful;
+			sourceTree = "<group>";
+		};
+		4F5EB1392CD68C7300E0E028 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4F5EB13A2CD68C7300E0E028 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4F5EB1432CD68C7400E0E028 /* mindfulTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F5EB1442CD68C7400E0E028 /* mindfulTests.swift */,
+			);
+			path = mindfulTests;
+			sourceTree = "<group>";
+		};
+		4F5EB14D2CD68C7400E0E028 /* mindfulUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4F5EB14E2CD68C7400E0E028 /* mindfulUITests.swift */,
+				4F5EB1502CD68C7400E0E028 /* mindfulUITestsLaunchTests.swift */,
+			);
+			path = mindfulUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F5EB12F2CD68C7100E0E028 /* mindful */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F5EB1542CD68C7400E0E028 /* Build configuration list for PBXNativeTarget "mindful" */;
+			buildPhases = (
+				4F5EB12C2CD68C7100E0E028 /* Sources */,
+				4F5EB12D2CD68C7100E0E028 /* Frameworks */,
+				4F5EB12E2CD68C7100E0E028 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mindful;
+			productName = mindful;
+			productReference = 4F5EB1302CD68C7100E0E028 /* mindful.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4F5EB13F2CD68C7300E0E028 /* mindfulTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F5EB1572CD68C7400E0E028 /* Build configuration list for PBXNativeTarget "mindfulTests" */;
+			buildPhases = (
+				4F5EB13C2CD68C7300E0E028 /* Sources */,
+				4F5EB13D2CD68C7300E0E028 /* Frameworks */,
+				4F5EB13E2CD68C7300E0E028 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F5EB1422CD68C7400E0E028 /* PBXTargetDependency */,
+			);
+			name = mindfulTests;
+			productName = mindfulTests;
+			productReference = 4F5EB1402CD68C7400E0E028 /* mindfulTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4F5EB1492CD68C7400E0E028 /* mindfulUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F5EB15A2CD68C7400E0E028 /* Build configuration list for PBXNativeTarget "mindfulUITests" */;
+			buildPhases = (
+				4F5EB1462CD68C7400E0E028 /* Sources */,
+				4F5EB1472CD68C7400E0E028 /* Frameworks */,
+				4F5EB1482CD68C7400E0E028 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F5EB14C2CD68C7400E0E028 /* PBXTargetDependency */,
+			);
+			name = mindfulUITests;
+			productName = mindfulUITests;
+			productReference = 4F5EB14A2CD68C7400E0E028 /* mindfulUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F5EB1282CD68C7100E0E028 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					4F5EB12F2CD68C7100E0E028 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					4F5EB13F2CD68C7300E0E028 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 4F5EB12F2CD68C7100E0E028;
+					};
+					4F5EB1492CD68C7400E0E028 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 4F5EB12F2CD68C7100E0E028;
+					};
+				};
+			};
+			buildConfigurationList = 4F5EB12B2CD68C7100E0E028 /* Build configuration list for PBXProject "mindful" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4F5EB1272CD68C7100E0E028;
+			productRefGroup = 4F5EB1312CD68C7100E0E028 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F5EB12F2CD68C7100E0E028 /* mindful */,
+				4F5EB13F2CD68C7300E0E028 /* mindfulTests */,
+				4F5EB1492CD68C7400E0E028 /* mindfulUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F5EB12E2CD68C7100E0E028 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F5EB13B2CD68C7300E0E028 /* Preview Assets.xcassets in Resources */,
+				4F5EB1382CD68C7300E0E028 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F5EB13E2CD68C7300E0E028 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F5EB1482CD68C7400E0E028 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F5EB12C2CD68C7100E0E028 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F5EB1362CD68C7100E0E028 /* ContentView.swift in Sources */,
+				4F5EB1342CD68C7100E0E028 /* mindfulApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F5EB13C2CD68C7300E0E028 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F5EB1452CD68C7400E0E028 /* mindfulTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F5EB1462CD68C7400E0E028 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F5EB1512CD68C7400E0E028 /* mindfulUITestsLaunchTests.swift in Sources */,
+				4F5EB14F2CD68C7400E0E028 /* mindfulUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F5EB1422CD68C7400E0E028 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F5EB12F2CD68C7100E0E028 /* mindful */;
+			targetProxy = 4F5EB1412CD68C7400E0E028 /* PBXContainerItemProxy */;
+		};
+		4F5EB14C2CD68C7400E0E028 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F5EB12F2CD68C7100E0E028 /* mindful */;
+			targetProxy = 4F5EB14B2CD68C7400E0E028 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4F5EB1522CD68C7400E0E028 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4F5EB1532CD68C7400E0E028 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F5EB1552CD68C7400E0E028 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"mindful/Preview Content\"";
+				DEVELOPMENT_TEAM = P86P7BBFUV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = anishya.mindful;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4F5EB1562CD68C7400E0E028 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"mindful/Preview Content\"";
+				DEVELOPMENT_TEAM = P86P7BBFUV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = anishya.mindful;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4F5EB1582CD68C7400E0E028 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P86P7BBFUV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = anishya.mindfulTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mindful.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/mindful";
+			};
+			name = Debug;
+		};
+		4F5EB1592CD68C7400E0E028 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P86P7BBFUV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = anishya.mindfulTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mindful.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/mindful";
+			};
+			name = Release;
+		};
+		4F5EB15B2CD68C7400E0E028 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P86P7BBFUV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = anishya.mindfulUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = mindful;
+			};
+			name = Debug;
+		};
+		4F5EB15C2CD68C7400E0E028 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P86P7BBFUV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = anishya.mindfulUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = mindful;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F5EB12B2CD68C7100E0E028 /* Build configuration list for PBXProject "mindful" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F5EB1522CD68C7400E0E028 /* Debug */,
+				4F5EB1532CD68C7400E0E028 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F5EB1542CD68C7400E0E028 /* Build configuration list for PBXNativeTarget "mindful" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F5EB1552CD68C7400E0E028 /* Debug */,
+				4F5EB1562CD68C7400E0E028 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F5EB1572CD68C7400E0E028 /* Build configuration list for PBXNativeTarget "mindfulTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F5EB1582CD68C7400E0E028 /* Debug */,
+				4F5EB1592CD68C7400E0E028 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F5EB15A2CD68C7400E0E028 /* Build configuration list for PBXNativeTarget "mindfulUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F5EB15B2CD68C7400E0E028 /* Debug */,
+				4F5EB15C2CD68C7400E0E028 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4F5EB1282CD68C7100E0E028 /* Project object */;
+}
