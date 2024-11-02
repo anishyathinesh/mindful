@@ -8,9 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-
-    @State private var goals: [String] = [""]
-    @State private var affirmations: [String] = [""]
+    
+    @ObservedObject var sharedData = SharedData()
     
     var body: some View {
         VStack {
@@ -25,13 +24,13 @@ struct ContentView: View {
                 .font(.title)
                 .multilineTextAlignment(.center)
                 .padding()
-            
+
             ScrollView {
-                VStack {
-                    Section(header: Text("[ i am... ]")) {
-                        ForEach(affirmations.indices, id: \.self) { index in
+                VStack(spacing: 5) {
+                    Section(header: Text("[ i am... ]").frame(maxWidth: .infinity, alignment: .leading)) {
+                        ForEach(sharedData.affirmations.indices, id: \.self) { index in
                             HStack {
-                                TextField("enter affirmation...", text: $affirmations[index])
+                                TextField("enter affirmation...", text: $sharedData.affirmations[index])
                                     .textFieldStyle(RoundedBorderTextFieldStyle())
                                 Button(action: {
                                     deleteAff(at: index)
@@ -40,21 +39,21 @@ struct ContentView: View {
                                         .foregroundColor(.red)
                                 }
                             }
+                            .padding(.vertical, 5)
                         }
                         Button(action: {
-                            affirmations.append("")
-                            print(affirmations)
+                            sharedData.affirmations.append("")
+                            print(sharedData.affirmations)
                         }) {
                             Image(systemName: "plus")
                         }
+                        .padding(.top, 5)
                     }
-                    .padding()
-            
                     
-                    Section(header: Text("[ i will... ]")) {
-                        ForEach(0..<goals.count, id: \.self) { index in
+                    Section(header: Text("[ i will... ]").frame(maxWidth: .infinity, alignment: .leading)) {
+                        ForEach(0..<sharedData.goals.count, id: \.self) { index in
                             HStack {
-                                TextField("enter goal...", text: $goals[index])
+                                TextField("enter goal...", text: $sharedData.goals[index])
                                     .textFieldStyle(RoundedBorderTextFieldStyle())
                                 Button(action: {
                                     deleteGoal(at: index)
@@ -63,30 +62,36 @@ struct ContentView: View {
                                         .foregroundColor(.red)
                                 }
                             }
+                            .padding(.vertical, 5)
                         }
                         Button(action: {
-                            goals.append("")
+                            sharedData.goals.append("")
                         }) {
                             Image(systemName: "plus")
                         }
+                        .padding(.top, 5)
                     }
-                    .padding()
                 }
+                .padding(.horizontal)
             }
             .background(Color.clear)
             
             Spacer()
-            Button(action: {
-                print("meditate button tapped.")
-            }) {
-                Text("meditate")
-                    .font(.title)
-                    .fontWeight(.bold)
-                    .foregroundColor(.white)
-                    .padding()
-                    .frame(maxWidth: .infinity)
-                    .background(Color(red: 148/255, green: 201/255, blue: 169/255))
-                    .cornerRadius(10)
+            
+            NavigationLink(destination: MeditateView(sharedData: sharedData)) {
+                Button(action: {
+                    print("meditate button tapped.")
+                }) {
+                    Text("meditate")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color(red: 148/255, green: 201/255, blue: 169/255))
+                        .cornerRadius(10)
+                        .shadow(radius: 5)
+                }
             }
             .padding()
         }
@@ -95,16 +100,16 @@ struct ContentView: View {
     }
     
     func deleteGoal(at index: Int) {
-        goals.remove(at: index)
-        if goals.isEmpty {
-            goals.append("")
+        sharedData.goals.remove(at: index)
+        if sharedData.goals.isEmpty {
+            sharedData.goals.append("")
         }
     }
     
     func deleteAff(at index: Int) {
-        affirmations.remove(at: index)
-        if affirmations.isEmpty {
-            affirmations.append("")
+        sharedData.affirmations.remove(at: index)
+        if sharedData.affirmations.isEmpty {
+            sharedData.affirmations.append("")
         }
     }
 }
