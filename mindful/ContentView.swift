@@ -24,6 +24,7 @@ class SharedData: ObservableObject {
 struct ContentView: View {
     
     @ObservedObject var sharedData = SharedData()
+    @State private var showNavView = false
     
     var body: some View {
         NavigationView {
@@ -51,18 +52,23 @@ struct ContentView: View {
                 
                 Spacer()
                 
-                NavigationLink(destination: MeditateView(sharedData: sharedData)) {
-                    Text("meditate")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .foregroundColor(.white)
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Color(red: 148/255, green: 201/255, blue: 169/255))
-                        .cornerRadius(10)
-                        .shadow(radius: 5)
-                }
-                .padding()
+                Button(action: {
+                     showNavView = true
+                 }) {
+                     Text("meditate")
+                         .font(.title)
+                         .fontWeight(.bold)
+                         .foregroundColor(.white)
+                         .padding()
+                         .frame(maxWidth: .infinity)
+                         .background(Color(red: 137/255, green: 204/255, blue: 249/246))
+                         .cornerRadius(10)
+                         .shadow(radius: 5)
+                 }
+                 .padding()
+                 .fullScreenCover(isPresented: $showNavView) {
+                     NavView()
+                 }
             }
             .padding()
             .background(Color.clear.edgesIgnoringSafeArea(.all))

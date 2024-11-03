@@ -11,16 +11,44 @@ struct MeditateView: View {
     @ObservedObject var sharedData: SharedData
     @State private var timeRemaining = 300
     @State private var isRunning = false
+    @State private var showEditor = false
     
     var body: some View {
         ZStack {
-            Image("med-bg-4")
-                .resizable()
-                .scaledToFill()
+            Color(red: 137/255, green: 204/255, blue: 249/246)
                 .ignoresSafeArea()
             VStack {
+                HStack {
+                    Spacer()
+                    HStack {
+                        Image(systemName: "pencil")
+                            .font(.title2)
+                            .foregroundColor(.white)
+                        
+                        Button(action: {
+                            showEditor = true
+                        }) {
+                            Text("edit goals & affirmations")
+                                .font(.title3)
+                                .foregroundColor(.white)
+                                .padding()
+                                .background(Color.clear)
+                                .cornerRadius(8)
+                        }
+                        .fullScreenCover(isPresented: $showEditor) {
+                            ContentView()
+                        }
+                    }
+                    .padding(.horizontal, 10)
+                    .padding(.vertical, 5)
+                    .background(Color.white.opacity(0.2))
+                    .cornerRadius(8)
+                    Spacer()
+                }
+                .padding()
+                
                 Text("meditate on your ideas")
-                    .font(.title2)
+                    .font(.title)
                     .fontWeight(.bold)
                     .foregroundColor(.white)
                     .padding()
