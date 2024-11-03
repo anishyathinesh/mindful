@@ -1,3 +1,9 @@
+//
+//  ContentView.swift
+//  mindful
+//
+//  Created by Anishya Thinesh on 11/2/24.
+//
 import SwiftUI
 
 struct Affirmation: Identifiable {
