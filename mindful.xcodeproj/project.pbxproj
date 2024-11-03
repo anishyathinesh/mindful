@@ -46,7 +46,6 @@
 		4F5EB14E2CD68C7400E0E028 /* mindfulUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mindfulUITests.swift; sourceTree = "<group>"; };
 		4F5EB1502CD68C7400E0E028 /* mindfulUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mindfulUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4FB2AFF82CD6C45C00B6A6A8 /* MeditateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditateView.swift; sourceTree = "<group>"; };
-		4FB2B0002CD6D61000B6A6A8 /* HGCircularSlider */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = HGCircularSlider; path = "/Users/anishyathinesh/Library/Developer/Xcode/DerivedData/mindful-aoxvaixwanqhjzbyxdakhzffbebb/SourcePackages/checkouts/HGCircularSlider"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +100,6 @@
 				4F5EB1372CD68C7300E0E028 /* Assets.xcassets */,
 				4F5EB1392CD68C7300E0E028 /* Preview Content */,
 				4FB2AFF82CD6C45C00B6A6A8 /* MeditateView.swift */,
-				4FB2B0002CD6D61000B6A6A8 /* HGCircularSlider */,
 			);
 			path = mindful;
 			sourceTree = "<group>";

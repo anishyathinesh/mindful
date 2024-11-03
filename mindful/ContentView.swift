@@ -1,3 +1,9 @@
+//
+//  ContentView.swift
+//  mindful
+//
+//  Created by Anishya Thinesh on 11/2/24.
+//
 import SwiftUI
 
 struct Affirmation: Identifiable {
@@ -75,6 +81,7 @@ struct ContentView: View {
                             }
                         }))
                         .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .autocapitalization(.none)
                     Button(action: {
                         deleteAffirmation(affirmation)
                     }) {
@@ -105,6 +112,7 @@ struct ContentView: View {
                             }
                         }))
                         .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .autocapitalization(.none)
                     Button(action: {
                         deleteGoal(goal)
                     }) {
