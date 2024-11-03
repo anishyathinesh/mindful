@@ -75,6 +75,7 @@ struct ContentView: View {
                             }
                         }))
                         .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .autocapitalization(.none)
                     Button(action: {
                         deleteAffirmation(affirmation)
                     }) {
@@ -105,6 +106,7 @@ struct ContentView: View {
                             }
                         }))
                         .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .autocapitalization(.none)
                     Button(action: {
                         deleteGoal(goal)
                     }) {
